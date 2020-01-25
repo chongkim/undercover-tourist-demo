@@ -1,1 +1,17 @@
-hello
+{% load static %}
+<html>
+<body>
+   <h1>Product Detail</h1>
+   Name: {{ product_detail.name }}<br/>
+   inventory_on_hand: {{ product_detail.inventory_on_hand }}<br/>
+   cost: {{ product_detail.cost }}<br/>
+   id: {{ product_detail.id }}<br/>
+   price: {{ product_detail.price }}<br/>
+   uuid: {{ product_detail.uuid }}<br/>
+   slug: {{ product_detail.slug }}<br/>
+   Description: {{ product_detail.description|safe }}<br/>
+   {% if product_detail.inventory_on_hand > 0 %}
+   <a href="">Purchase</a>
+   {% endif %}
+</body>
+</html>

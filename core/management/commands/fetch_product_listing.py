@@ -12,7 +12,7 @@ from core.models import ProductListing
 class Command(BaseCommand):
     def handle(self, **options):
         response = requests.get('https://careers.undercovertourist.com/assignment/1/products/', headers={
-            'X-Auth': 'chong.kim'
+            'X-Auth': 'chong.kim',
         })
 
         cursor = connection.cursor()

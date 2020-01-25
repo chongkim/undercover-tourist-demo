@@ -2,3 +2,4 @@ env
 *.sqlite3
 *.pyc
 .vscode
+node_modules
