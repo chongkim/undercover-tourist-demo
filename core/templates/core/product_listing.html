@@ -1,0 +1,18 @@
+{% load static %}
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'core/main.css' %}">
+</head>
+<body>
+    {% for product_listing in product_listings %}
+    <div class="field">
+        <div class="name">id</div> <div class="value">{{product_listing.id}}</div>
+        <div class="name">name</div> <div class="value">{{product_listing.name}}</div>
+        <div class="name">price</div> <div class="value">{{product_listing.price}}</div>
+        <div class="name">slug</div> <div class="value">{{product_listing.slug}}</div>
+        <div class="name">uuid</div> <div class="value">{{product_listing.uuid}}</div>
+        <hr/>
+    </div>
+    {% endfor %}
+</body>
+</html>
