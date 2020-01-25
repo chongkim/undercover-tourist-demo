@@ -11,7 +11,7 @@
         <div class="name">price</div> <div class="value">{{product_listing.price}}</div>
         <div class="name">slug</div> <div class="value">{{product_listing.slug}}</div>
         <div class="name">uuid</div> <div class="value">{{product_listing.uuid}}</div>
-        <hr/>
+        <div class="name">link</div> <div class="value"><a href="{% url 'product_detail' product_listing.id %}">link</a></div>
     </div>
     {% endfor %}
 </body>

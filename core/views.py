@@ -10,3 +10,7 @@ class ProductListingView(generic.ListView):
 
     def get_queryset(self):
         return ProductListing.objects.all()
+
+
+class ProductDetailView(generic.TemplateView):
+    template_name = 'core/product_detail.html'

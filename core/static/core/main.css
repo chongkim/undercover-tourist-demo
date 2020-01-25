@@ -1,9 +1,10 @@
 .field {
     display: flex;
     flex-wrap: wrap;
-    width: 550px;
+    width: 542px;
     margin-left: 100px;
     margin-bottom: 20px;
+    border: 1px solid black;
 }
 
 .name {
