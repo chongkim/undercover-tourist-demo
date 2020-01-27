@@ -18,3 +18,8 @@
     border: 1px solid #ccc;
     padding-left: 5px;
 }
+
+.message {
+    border: 1px solid red;
+    width: 300px;
+}

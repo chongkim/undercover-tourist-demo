@@ -11,7 +11,7 @@
    slug: {{ product_detail.slug }}<br/>
    Description: {{ product_detail.description|safe }}<br/>
    {% if product_detail.inventory_on_hand > 0 %}
-   <a href="">Purchase</a>
+   <a href="{% url 'purchase' product_detail.id %}">Purchase</a>
    {% endif %}
 </body>
 </html>

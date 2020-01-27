@@ -1,0 +1,13 @@
+{% load static %}
+<html>
+    <link rel="stylesheet" href="{% static 'core/css/main.css' %}">
+    <body>
+        <form action="{% url 'purchase' product_id %}" method="POST">
+            {% csrf_token %}
+            <table>
+            {{ form }}
+            </table>
+            <input type="submit" value="Purchase">
+        </form>
+    </body>
+</html>
